@@ -50,7 +50,6 @@ li:hover {
 }
 
 .drop_menu_content {
-    min-width: 150px;
     position: absolute;
     display: none;
     left: 0%;
