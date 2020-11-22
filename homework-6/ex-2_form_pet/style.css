@@ -75,6 +75,25 @@ td {
     padding-bottom: 20px;
 }
 
+.btn--choose {
+    display: flex;
+    display: flex;
+    background-color: white;
+    padding: 7px;
+}
+
+.btn--choose button {
+    flex: 1;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 0px 2px 2px slategray;
+}
+.btn--choose button:nth-child(1) {
+    background-color: lightcoral;
+}
+.btn--choose button:visited {
+    background-color: lightcoral;
+}
 .btn {
     position: absolute;
     display: flex;
