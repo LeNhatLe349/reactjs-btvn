@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 .wraper {
     margin: 30px auto;
     position: relative;
@@ -9,6 +10,7 @@
     width: 1000px;
     height: 600px;
 }
+
 .form {
     position: absolute;
     top: 100px;
@@ -17,6 +19,7 @@
     width: 800px;
     height: 400px;
 }
+
 .form__logo {
     position: absolute;
     width: 200px;
@@ -25,17 +28,20 @@
     top: 0px;
     left: 0px;
 }
+
 .form__logo p {
     font-size: 30px;
     position: absolute;
     top: 50px;
     left: 20px;
 }
+
 .form__logo i {
     transform: rotate(-45deg);
-    background-color:lightpink;
+    background-color: lightpink;
     border-radius: 15px;
 }
+
 .form__logo img {
     width: 150px;
     height: 150px;
@@ -50,10 +56,12 @@
     top: 20px;
     height: 50px;
 }
+
 .form__sigin__title h2 {
     text-align: left;
     font-size: 30px;
 }
+
 .form__sigin__content {
     position: absolute;
     left: 250px;
@@ -61,21 +69,25 @@
     width: 300px;
     height: 300px;
 }
+
 td {
-padding-left: 50px;
-padding-bottom: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
 }
+
 .btn {
     position: absolute;
     display: flex;
 }
+
 .btn--back {
     position: absolute;
     left: 80px;
     top: 20px;
-    padding:2px 20px;
+    padding: 2px 20px;
     border-radius: 15px;
 }
+
 .btn--next {
     position: absolute;
     left: 280px;
@@ -83,7 +95,8 @@ padding-bottom: 20px;
     padding: 2px 20px;
     border-radius: 15px;
 }
+
 [class^="btn"] :hover {
-    background-color:rgb(31, 21, 31);
+    background-color: rgb(31, 21, 31);
     color: white;
 }
