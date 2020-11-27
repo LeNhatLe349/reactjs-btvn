@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wraper {
+    position: relative;
+    margin-top: 0 auto;
+    width: 800px;
+    height: 800px;
+    background-color: rgba(160, 150, 150, 0.418);
+}
+
+[class^="card--"] {
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    border: 2px solid black;
+    z-index: 0.5;
+}
+
+[class^="card__image"] {
+    position: absolute;
+    max-width: 220px;
+    max-height: 30px;
+    left: 15px;
+    top: 15px;
+}
+
+[class^="card__image"] img {
+    height: 290px;
+    width: 100%;
+    /* border: 2px solid lightslategray; */
+}
+
+.card--los {
+    right: 200px;
+    top: 200px;
+    transform: rotate(10deg);
+}
+
+.card--london {
+    left: 300px;
+    top: 300px;
+    transform: rotate(-10deg);
+}
+
+.card--italy {
+    left: 100px;
+    top: 300px;
+    transform: rotate(-20deg);
+}
+
+.card--berlin {
+    left: 200px;
+    top: 100px;
+    transform: rotate(-10deg);
+}
+
+.card__name {
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.card__name p {
+    text-align: center;
+    font-weight: bold;
+}
+
+[class^="card--"]::before {
+    position: absolute;
+    content: "";
+    background-color: rgba(160, 150, 150, 0.418);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+[class^="card--"]:hover {
+    z-index: 2;
+    transform: rotate(0) scale(1);
+}
+
+[class^="card--"]:hover::before {
+    z-index: -1;
+}
