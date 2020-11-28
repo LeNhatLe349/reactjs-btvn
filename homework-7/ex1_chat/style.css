@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wraper {
+    margin: 0 auto;
+    width: 100%;
+    background-color: aquamarine;
+    height: 800px;
+    position: relative;
+}
+
+.user {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 300px;
+    height: 740px;
+    background-color: #434753;
+}
+
+.user .user__search {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 50px;
+    top: 20px;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #80838b;
+}
+
+.user .user__search .search {
+    margin-left: 20px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #80838b;
+    outline: none;
+}
+
+.btn_search {
+    margin-top: 10px;
+    border: none;
+    background-color: #80838b;
+}
+
+.user__list {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 300px;
+}
+
+.user__list h4 {
+    color: white;
+}
+.user__list span {
+    color: white;
+}
+
+.avatar {
+    width: 100px;
+}
+
+table {
+    border-spacing: 5px;
+    margin: 20px auto;
+    text-align: left;
+    width: 300px;
+    align-items: center;
+}
+
+table img {
+    margin-left: 30px;
+}
+
+td {
+    height: 50px;
+}
+
+.Mess {
+    position: absolute;
+    width: 800px;
+    height: 740px;
+    left: 300px;
+    top: 0;
+    background-color: snow;
+}
+
+.Mess__profile {
+    display: flex;
+    position: absolute;
+    width: 800px;
+    height: 100px;
+    left: 0;
+    top: 0px;
+    background-color: #f4f5fa;
+    border: 1px solid rgb(243, 248, 246);
+}
+
+.Mess--avatar {
+    margin-left: 50px;
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+    border: 1px solid green;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.Mess--avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.Mess--name {
+    margin-top: 40px;
+    width: 600px;
+    height: 60px;
+    padding-left: 20px;
+}
+
+.Mess--star {
+    margin-right: 30px;
+    line-height: 100px;
+}
+
+.Mess__content {
+    position: absolute;
+    top: 102px;
+    left: 0;
+    width: 800px;
+    height: 475px;
+    background-color: #f3f4fa;
+    border: 1px solid rgb(243, 248, 246);
+}
+
+.message .sender {
+    color: #6e6f74;
+    font-size: 17px;
+    padding: 10px 0;
+    margin-left: 50px;
+}
+
+.message .datetime {
+    color: #bbbcc1;
+}
+
+.message .sender__mess {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    margin-left: 50px;
+}
+
+.message .sender__mess p {
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    background-color: #91ba78;
+    position: relative;
+    font-size: 17px;
+    color: #f3fef2;
+    border-radius: 5px;
+}
+
+.message .sender__mess p::before {
+    bottom: 100%;
+    left: 5%;
+    border: solid;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(193, 26, 56, 0);
+    border-bottom-color: #91ba78;
+    border-width: 15px;
+}
+
+.reply {
+    margin-right: 50px;
+}
+
+.reply__content {
+    text-align: right;
+    height:40px;
+}
+
+.reply .datetime {
+    color: #bbbcc1;
+}
+
+.reply__letter {
+    margin-left: 30%;
+    width: 70%;
+    height: 80px;
+    background-color: #A2C3E7;
+    position: relative;
+    border-radius: 5px;
+}
+
+.reply__letter p {
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+}
+
+.reply__letter p::before {
+    bottom: 100%;
+    right: 5%;
+    border: solid;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(193, 26, 56, 0);
+    border-bottom-color: #A2C3E7;
+    border-width: 15px;
+}
+
+.Mess__content .entypeing {
+    margin-left: 50px;
+    margin-top: 20px;
+    color: #6e6f74;
+    font-size: 17px;
+}
+
+.Mess__content .entypeing .datetime {
+    color: #bbbcc1;
+}
+
+.Mess__content .loading {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.Mess .text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left:0;
+    background-color: #f3f4fa;
+    height: 160px;
+    box-shadow: 0px 2px 0px 0px rgb(128, 124, 124);
+}
+form {
+    padding: 30px 35px;
+}
+
+form > textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px;
+    resize: none;
+}
+
+form > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+form > div .file{
+    height: 20px;
+    position: relative;
+}
+
+ form > div .file label {
+    width: 30px;
+    height: 20px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+form > div .file input {
+    display: none;
+}
+ form .send button {
+    width: 50px;
+    float: right;
+    background-color: rgba(193, 26, 56, 0);
+    outline: none;
+    color: #b1c5db;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+}
